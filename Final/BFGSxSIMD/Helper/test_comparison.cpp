@@ -10,8 +10,12 @@ using namespace aadc;
 using Log::Timer;
 using Log::logX;
 
-typedef __m512d mmType;
-// typedef __m256d mmType;
+#if AADC_512
+    typedef __m512d mmType;
+    // typedef __m256d mmType;
+#else
+    typedef __m256d mmType;
+#endif
 
 int main()
 {   
@@ -74,6 +78,7 @@ int main()
 
         BfgsHelper<mmType> fun_nopoly(aad_funcs2, ws2, v_index2,f_res2);
         fun_nopoly.setPolyFitOrder(0);
+        // fun_nopoly.setDgOrder(0);
 
         // With polyfit
         std::shared_ptr<aadc::AADCFunctions<mmType> > aad_funcs; 

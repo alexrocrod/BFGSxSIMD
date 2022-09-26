@@ -9,8 +9,12 @@ using namespace aadc;
 using Log::Timer;
 using Log::logX;
 
-typedef __m512d mmType;
-// typedef __m256d mmType;
+#if AADC_512
+    typedef __m512d mmType;
+    // typedef __m256d mmType;
+#else
+    typedef __m256d mmType;
+#endif
 
 int main(int argc, char* argv[])
 {   

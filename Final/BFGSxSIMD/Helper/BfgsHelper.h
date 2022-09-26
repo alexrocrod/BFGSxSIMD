@@ -124,8 +124,8 @@ public:
             }
         }  
 
-        if (dg_count < 2)       // not using finite differences
-            getGrad(x, grad);
+        // if (dg_count < 2)       // not using finite differences
+        //     getGrad(x, grad);
         
 
         step = steps[minElIndex];           // updates the step with the used step
@@ -136,10 +136,13 @@ public:
         return fx;
     }
     /// function that calculates the 1D-derivative 
-    double getDg(const VectorXd &drt, const VectorXd &x, const double &fx0, const VectorXd &grad)   
+    double getDg(const VectorXd &drt, const VectorXd &x, const double &fx0, VectorXd &grad)   
     {
         if (dg_count < 2 )
+        {
+            getGrad(x, grad);
             return grad.dot(drt);
+        }
         
         mmVector<mmType> xi(n);  // vector of x mmtypes
 
