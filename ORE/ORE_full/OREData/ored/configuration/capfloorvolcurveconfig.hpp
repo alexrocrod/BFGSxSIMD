@@ -1,0 +1,117 @@
+/*
+ Copyright (C) 2016 Quaternion Risk Management Ltd
+ All rights reserved.
+
+ This file is part of ORE, a free-software/open-source library
+ for transparent pricing and risk analysis - http://opensourcerisk.org
+
+ ORE is free software: you can redistribute it and/or modify it
+ under the terms of the Modified BSD License.  You should have received a
+ copy of the license along with this program.
+ The license is also available online at <http://opensourcerisk.org>
+
+ This program is distributed on the basis that it will form a useful
+ contribution to risk analytics and model standardisation, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ FITNESS FOR A PARTICULAR PURPOSE. See the license for more details.
+*/
+
+/*! \file ored/configuration/capfloorvolcurveconfig.hpp
+    \brief CapFloor volatility curve configuration class
+    \ingroup configuration
+*/
+
+#pragma once
+
+#include <ored/configuration/curveconfig.hpp>
+#include <ql/time/calendar.hpp>
+#include <ql/time/daycounter.hpp>
+#include <ql/time/period.hpp>
+#include <ql/types.hpp>
+
+namespace ore {
+namespace data {
+using std::string;
+using std::vector;
+using ore::data::XMLNode;
+using QuantLib::Period;
+using QuantLib::DayCounter;
+using QuantLib::Natural;
+using QuantLib::Calendar;
+using QuantLib::BusinessDayConvention;
+
+//! CapFloor volatility curve configuration class
+/*! \ingroup configuration
+ */
+class CapFloorVolatilityCurveConfig : public CurveConfig {
+public:
+    enum class VolatilityType { Lognormal, Normal, ShiftedLognormal };
+
+    static const string defaultInterpolationMethod; // BicubicSpline
+
+    CapFloorVolatilityCurveConfig() {}
+    CapFloorVolatilityCurveConfig(const string& curveID, const string& curveDescription,
+                                  const VolatilityType& volatilityType, const bool extrapolate,
+                                  const bool flatExtrapolation, bool inlcudeAtm, const vector<std::string>& tenors,
+                                  const vector<std::string>& strikes, const DayCounter& dayCounter, Natural settleDays,
+                                  const Calendar& calendar, const BusinessDayConvention& businessDayConvention,
+                                  const string& iborIndex, const string& discountCurve,
+                                  const string& interpolationMethod = defaultInterpolationMethod);
+
+    //! \name XMLSerializable interface
+    //@{
+    void fromXML(XMLNode* node) override;
+    XMLNode* toXML(XMLDocument& doc) override;
+    //@}
+
+    //! \name Inspectors
+    //@{
+    const VolatilityType& volatilityType() const { return volatilityType_; }
+    const bool& extrapolate() const { return extrapolate_; }
+    const bool& flatExtrapolation() const { return flatExtrapolation_; }
+    const bool& includeAtm() const { return includeAtm_; }
+    const vector<std::string>& tenors() const { return tenors_; }
+    const vector<std::string>& strikes() const { return strikes_; }
+    const DayCounter& dayCounter() const { return dayCounter_; }
+    const Natural& settleDays() const { return settleDays_; }
+    const Calendar& calendar() const { return calendar_; }
+    const BusinessDayConvention& businessDayConvention() const { return businessDayConvention_; }
+    const string& iborIndex() const { return iborIndex_; }
+    const string& discountCurve() const { return discountCurve_; }
+    const string& interpolationMethod() const { return interpolationMethod_; }
+    const vector<string>& quotes() override;
+    //@}
+
+    //! \name Setters
+    //@{
+    VolatilityType& volatilityType() { return volatilityType_; }
+    bool& extrapolate() { return extrapolate_; }
+    bool& flatExtrapolation() { return flatExtrapolation_; }
+    bool& includeAtm() { return includeAtm_; }
+    vector<std::string>& tenors() { return tenors_; }
+    vector<std::string>& strikes() { return strikes_; }
+    DayCounter& dayCounter() { return dayCounter_; }
+    Natural& settleDays() { return settleDays_; }
+    Calendar& calendar() { return calendar_; }
+    string& iborIndex() { return iborIndex_; }
+    string& discountCurve() { return discountCurve_; }
+    string& interpolationMethod() { return interpolationMethod_; }
+    //@}
+
+private:
+    VolatilityType volatilityType_;
+    bool extrapolate_, flatExtrapolation_, includeAtm_;
+    vector<std::string> tenors_;
+    vector<std::string> strikes_;
+    DayCounter dayCounter_;
+    Natural settleDays_;
+    Calendar calendar_;
+    BusinessDayConvention businessDayConvention_;
+    string iborIndex_;
+    string discountCurve_;
+    string interpolationMethod_;
+};
+
+std::ostream& operator<<(std::ostream& out, CapFloorVolatilityCurveConfig::VolatilityType t);
+} // namespace data
+} // namespace ore

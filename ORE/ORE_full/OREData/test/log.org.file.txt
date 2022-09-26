@@ -1,0 +1,255 @@
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention USD-ON-DEPOSIT
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention USD-OIS
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention USD-AVERAGE-OIS
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention USD-DEPOSIT
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention USD-3M-FRA
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention USD-LIBOR-3M-SWAP-ANNUAL
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention USD-LIBOR-1M-3M-BASIS
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention MXN-DEPOSIT
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention MXN-TIIE-28D-SWAP
+DEBUG     (...ion/conventions.cpp:1051) : Loading Convention USD-MXN-28D-XCCY-BASIS
+DATA      (...ilities/xmlutils.cpp:370) : Added pair [MXN,Yield/MXN/MXN-IN-USD] to the map
+DATA      (...ilities/xmlutils.cpp:370) : Added pair [USD,Yield/USD/USD-FedFunds] to the map
+DEBUG     (...marketparameters.hpp:195) : TodaysMarketParameters, add market objects of type DiscountCurve: default MXN Yield/MXN/MXN-IN-USD
+DEBUG     (...marketparameters.hpp:195) : TodaysMarketParameters, add market objects of type DiscountCurve: default USD Yield/USD/USD-FedFunds
+DATA      (...ilities/xmlutils.cpp:370) : Added pair [MXN-TIIE-28D,Yield/MXN/MXN-TIIE-28D] to the map
+DATA      (...ilities/xmlutils.cpp:370) : Added pair [USD-FedFunds,Yield/USD/USD-FedFunds] to the map
+DATA      (...ilities/xmlutils.cpp:370) : Added pair [USD-LIBOR-1M,Yield/USD/USD-LIBOR-1M] to the map
+DATA      (...ilities/xmlutils.cpp:370) : Added pair [USD-LIBOR-3M,Yield/USD/USD-LIBOR-3M] to the map
+DEBUG     (...marketparameters.hpp:195) : TodaysMarketParameters, add market objects of type IndexCurve: default MXN-TIIE-28D Yield/MXN/MXN-TIIE-28D
+DEBUG     (...marketparameters.hpp:195) : TodaysMarketParameters, add market objects of type IndexCurve: default USD-FedFunds Yield/USD/USD-FedFunds
+DEBUG     (...marketparameters.hpp:195) : TodaysMarketParameters, add market objects of type IndexCurve: default USD-LIBOR-1M Yield/USD/USD-LIBOR-1M
+DEBUG     (...marketparameters.hpp:195) : TodaysMarketParameters, add market objects of type IndexCurve: default USD-LIBOR-3M Yield/USD/USD-LIBOR-3M
+DATA      (...ilities/xmlutils.cpp:370) : Added pair [USDMXN,FX/USD/MXN] to the map
+DEBUG     (...marketparameters.hpp:195) : TodaysMarketParameters, add market objects of type FXSpot: default USDMXN FX/USD/MXN
+DEBUG     (...rveconfigurations.cpp:54) : Added curve config with ID = MXN-TIIE-28D
+DEBUG     (...rveconfigurations.cpp:54) : Added curve config with ID = MXN-IN-USD
+DEBUG     (...rveconfigurations.cpp:54) : Added curve config with ID = USD-FedFunds
+DEBUG     (...rveconfigurations.cpp:54) : Added curve config with ID = USD-LIBOR-3M
+DEBUG     (...rveconfigurations.cpp:54) : Added curve config with ID = USD-LIBOR-1M
+NOTICE    (...ketdata/csvloader.cpp:75) : CSVLoader loading from ./input/mxnircurves/market_02.txt
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FX/RATE/USD/MXN
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum MM/RATE/MXN/2D/28D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/6M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum MM/RATE/USD/2D/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/2M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/50Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/5Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/8M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/10Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/9Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/4M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/3Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/25Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum MM/RATE/USD/2D/1M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/12Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/30Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/7Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/1M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/40Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/6Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/7M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/3M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/15Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/4Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/9M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/20Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/8Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum FRA/RATE/USD/5M/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/3M/2Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1M/USD/5Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1M/USD/4Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/10M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/5M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/1M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/6M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1M/USD/1Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1M/USD/10Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1M/USD/3Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/11M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/4M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/9M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1M/USD/7Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1M/USD/2Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/3M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/1Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/8M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/2M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/USD/2D/1D/7M
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/3640D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/84D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum CC_BASIS_SWAP/BASIS_SPREAD/USD/1M/MXN/28D/1092D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum CC_BASIS_SWAP/BASIS_SPREAD/USD/1M/MXN/28D/728D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum CC_BASIS_SWAP/BASIS_SPREAD/USD/1M/MXN/28D/2548D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/364D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum CC_BASIS_SWAP/BASIS_SPREAD/USD/1M/MXN/28D/3640D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/168D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum CC_BASIS_SWAP/BASIS_SPREAD/USD/1M/MXN/28D/1456D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum CC_BASIS_SWAP/BASIS_SPREAD/USD/1M/MXN/28D/1820D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/2548D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/1092D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/728D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/1456D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/1820D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum IR_SWAP/RATE/MXN/2D/28D/252D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum MM/RATE/USD/0D/1D
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/4Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/30Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/5Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/20Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/25Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/3Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/10Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/15Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/7Y
+DATA      (...etdata/csvloader.cpp:104) : Added MarketDatum BASIS_SWAP/BASIS_SPREAD/3M/1D/USD/2Y
+NOTICE    (...etdata/csvloader.cpp:116) : CSVLoader completed processing ./input/mxnircurves/market_02.txt
+NOTICE    (...ketdata/csvloader.cpp:45) : CSVLoader loaded 75 market data points for April 17th, 2019
+NOTICE    (...ketdata/csvloader.cpp:75) : CSVLoader loading from ./input/mxnircurves/fixings.txt
+NOTICE    (...etdata/csvloader.cpp:116) : CSVLoader completed processing ./input/mxnircurves/fixings.txt
+NOTICE    (...ketdata/csvloader.cpp:50) : CSVLoader loaded 0 fixings
+NOTICE    (...ketdata/csvloader.cpp:52) : CSVLoader complete.
+NOTICE    (...data/todaysmarket.cpp:72) : Todays Market Loading Fixings
+NOTICE    (...arketdata/fixings.cpp:59) : Added 0 of 0 fixings in 0.000003 seconds
+NOTICE    (...data/todaysmarket.cpp:74) : Todays Market Loading Fixing done.
+NOTICE    (...data/todaysmarket.cpp:79) : Todays Market Loading Dividends
+DEBUG     (...arketdata/fixings.cpp:83) : Added 0 of 0 dividends in 0.000002 seconds
+NOTICE    (...data/todaysmarket.cpp:81) : Todays Market Loading Dividends done.
+NOTICE    (...ata/todaysmarket.cpp:110) : Build objects in TodaysMarket configuration default
+DEBUG     (...marketparameters.cpp:194) : Add spec Yield/MXN/MXN-IN-USD
+DEBUG     (...marketparameters.cpp:194) : Add spec Yield/USD/USD-FedFunds
+DEBUG     (...marketparameters.cpp:194) : Add spec Yield/MXN/MXN-TIIE-28D
+DEBUG     (...marketparameters.cpp:194) : Add spec Yield/USD/USD-FedFunds
+DEBUG     (...marketparameters.cpp:194) : Add spec Yield/USD/USD-LIBOR-1M
+DEBUG     (...marketparameters.cpp:194) : Add spec Yield/USD/USD-LIBOR-3M
+DEBUG     (...marketparameters.cpp:194) : Add spec FX/USD/MXN
+DEBUG     (...ata/todaysmarket.cpp:120) : CurveSpec: Yield/MXN/MXN-IN-USD
+DEBUG     (...ata/todaysmarket.cpp:120) : CurveSpec: Yield/USD/USD-FedFunds
+DEBUG     (...ata/todaysmarket.cpp:120) : CurveSpec: Yield/MXN/MXN-TIIE-28D
+DEBUG     (...ata/todaysmarket.cpp:120) : CurveSpec: Yield/USD/USD-FedFunds
+DEBUG     (...ata/todaysmarket.cpp:120) : CurveSpec: Yield/USD/USD-LIBOR-1M
+DEBUG     (...ata/todaysmarket.cpp:120) : CurveSpec: Yield/USD/USD-LIBOR-3M
+DEBUG     (...ata/todaysmarket.cpp:120) : CurveSpec: FX/USD/MXN
+DEBUG     (...tdata/curveloader.cpp:57) : required yield curve MXN-TIIE-28D for MXN-IN-USD not (yet) available
+DEBUG     (...data/curveloader.cpp:114) : can not (yet) build MXN-IN-USD
+DEBUG     (...data/curveloader.cpp:110) : can build MXN-TIIE-28D
+DEBUG     (...data/curveloader.cpp:110) : can build USD-FedFunds
+DEBUG     (...tdata/curveloader.cpp:57) : required yield curve USD-LIBOR-3M for USD-LIBOR-1M not (yet) available
+DEBUG     (...data/curveloader.cpp:114) : can not (yet) build USD-LIBOR-1M
+DEBUG     (...data/curveloader.cpp:110) : can build USD-LIBOR-3M
+DEBUG     (...tdata/curveloader.cpp:57) : required yield curve USD-LIBOR-1M for MXN-IN-USD not (yet) available
+DEBUG     (...data/curveloader.cpp:114) : can not (yet) build MXN-IN-USD
+DEBUG     (...data/curveloader.cpp:110) : can build USD-LIBOR-1M
+DEBUG     (...data/curveloader.cpp:110) : can build MXN-IN-USD
+DEBUG     (...data/curveloader.cpp:136) : Ordered Curves (6)
+DEBUG     (...data/curveloader.cpp:138) :  0 Yield/MXN/MXN-TIIE-28D
+DEBUG     (...data/curveloader.cpp:138) :  1 Yield/USD/USD-FedFunds
+DEBUG     (...data/curveloader.cpp:138) :  2 Yield/USD/USD-LIBOR-3M
+DEBUG     (...data/curveloader.cpp:138) :  3 Yield/USD/USD-LIBOR-1M
+DEBUG     (...data/curveloader.cpp:138) :  4 Yield/MXN/MXN-IN-USD
+DEBUG     (...data/curveloader.cpp:138) :  5 FX/USD/MXN
+NOTICE    (...ata/todaysmarket.cpp:131) : Loading spec Yield/MXN/MXN-TIIE-28D
+NOTICE    (...ata/todaysmarket.cpp:144) : Building YieldCurve for asof April 17th, 2019
+DEBUG     (...tdata/yieldcurve.cpp:143) : Bootstrapping YieldCurve Yield/MXN/MXN-TIIE-28D
+DEBUG     (...tdata/yieldcurve.cpp:715) : Adding Segment Deposit with conventions "MXN-DEPOSIT"
+DEBUG     (...tdata/yieldcurve.cpp:935) : Adding Segment Swap with conventions "MXN-TIIE-28D-SWAP"
+DEBUG     (...tdata/yieldcurve.cpp:668) : Bootstrapping with 11 instruments
+NOTICE    (...tdata/yieldcurve.cpp:163) : Yield curve Yield/MXN/MXN-TIIE-28D built
+DEBUG     (...ata/todaysmarket.cpp:150) : Added YieldCurve "Yield/MXN/MXN-TIIE-28D" to requiredYieldCurves map
+NOTICE    (...ata/todaysmarket.cpp:176) : Adding Index(MXN-TIIE-28D) with spec Yield/MXN/MXN-TIIE-28D to configuration default
+NOTICE    (...ata/todaysmarket.cpp:868) : Loading spec Yield/MXN/MXN-TIIE-28D done.
+NOTICE    (...ata/todaysmarket.cpp:131) : Loading spec Yield/USD/USD-FedFunds
+NOTICE    (...ata/todaysmarket.cpp:144) : Building YieldCurve for asof April 17th, 2019
+DEBUG     (...tdata/yieldcurve.cpp:143) : Bootstrapping YieldCurve Yield/USD/USD-FedFunds
+DEBUG     (...tdata/yieldcurve.cpp:715) : Adding Segment Deposit with conventions "USD-ON-DEPOSIT"
+DEBUG     (...tdata/yieldcurve.cpp:869) : Adding Segment OIS with conventions "USD-OIS"
+DEBUG     (...tdata/yieldcurve.cpp:988) : Adding Segment Average OIS with conventions "USD-AVERAGE-OIS"
+DEBUG     (...tdata/yieldcurve.cpp:668) : Bootstrapping with 23 instruments
+NOTICE    (...tdata/yieldcurve.cpp:163) : Yield curve Yield/USD/USD-FedFunds built
+DEBUG     (...ata/todaysmarket.cpp:150) : Added YieldCurve "Yield/USD/USD-FedFunds" to requiredYieldCurves map
+NOTICE    (...ata/todaysmarket.cpp:165) : Adding YieldCurve(USD) with spec Yield/USD/USD-FedFunds to configuration default
+NOTICE    (...ata/todaysmarket.cpp:176) : Adding Index(USD-FedFunds) with spec Yield/USD/USD-FedFunds to configuration default
+NOTICE    (...ata/todaysmarket.cpp:868) : Loading spec Yield/USD/USD-FedFunds done.
+NOTICE    (...ata/todaysmarket.cpp:131) : Loading spec Yield/USD/USD-LIBOR-3M
+NOTICE    (...ata/todaysmarket.cpp:144) : Building YieldCurve for asof April 17th, 2019
+DEBUG     (...tdata/yieldcurve.cpp:143) : Bootstrapping YieldCurve Yield/USD/USD-LIBOR-3M
+DEBUG     (...tdata/yieldcurve.cpp:715) : Adding Segment Deposit with conventions "USD-DEPOSIT"
+DEBUG     (...tdata/yieldcurve.cpp:820) : Adding Segment FRA with conventions "USD-3M-FRA"
+DEBUG     (...tdata/yieldcurve.cpp:935) : Adding Segment Swap with conventions "USD-LIBOR-3M-SWAP-ANNUAL"
+DEBUG     (...tdata/yieldcurve.cpp:668) : Bootstrapping with 26 instruments
+NOTICE    (...tdata/yieldcurve.cpp:163) : Yield curve Yield/USD/USD-LIBOR-3M built
+DEBUG     (...ata/todaysmarket.cpp:150) : Added YieldCurve "Yield/USD/USD-LIBOR-3M" to requiredYieldCurves map
+NOTICE    (...ata/todaysmarket.cpp:176) : Adding Index(USD-LIBOR-3M) with spec Yield/USD/USD-LIBOR-3M to configuration default
+NOTICE    (...ata/todaysmarket.cpp:868) : Loading spec Yield/USD/USD-LIBOR-3M done.
+NOTICE    (...ata/todaysmarket.cpp:131) : Loading spec Yield/USD/USD-LIBOR-1M
+NOTICE    (...ata/todaysmarket.cpp:144) : Building YieldCurve for asof April 17th, 2019
+DEBUG     (...tdata/yieldcurve.cpp:143) : Bootstrapping YieldCurve Yield/USD/USD-LIBOR-1M
+DEBUG     (...tdata/yieldcurve.cpp:715) : Adding Segment Deposit with conventions "USD-DEPOSIT"
+DEBUG     (...data/yieldcurve.cpp:1065) : Adding Segment Tenor Basis Swap with conventions "USD-LIBOR-1M-3M-BASIS"
+DEBUG     (...tdata/yieldcurve.cpp:668) : Bootstrapping with 8 instruments
+NOTICE    (...tdata/yieldcurve.cpp:163) : Yield curve Yield/USD/USD-LIBOR-1M built
+DEBUG     (...ata/todaysmarket.cpp:150) : Added YieldCurve "Yield/USD/USD-LIBOR-1M" to requiredYieldCurves map
+NOTICE    (...ata/todaysmarket.cpp:176) : Adding Index(USD-LIBOR-1M) with spec Yield/USD/USD-LIBOR-1M to configuration default
+NOTICE    (...ata/todaysmarket.cpp:868) : Loading spec Yield/USD/USD-LIBOR-1M done.
+NOTICE    (...ata/todaysmarket.cpp:131) : Loading spec Yield/MXN/MXN-IN-USD
+NOTICE    (...ata/todaysmarket.cpp:144) : Building YieldCurve for asof April 17th, 2019
+DEBUG     (...tdata/yieldcurve.cpp:143) : Bootstrapping YieldCurve Yield/MXN/MXN-IN-USD
+DEBUG     (...data/yieldcurve.cpp:1401) : Adding Segment Cross Currency Basis Swap with conventions "USD-MXN-28D-XCCY-BASIS"
+DEBUG     (...tdata/yieldcurve.cpp:668) : Bootstrapping with 6 instruments
+NOTICE    (...tdata/yieldcurve.cpp:163) : Yield curve Yield/MXN/MXN-IN-USD built
+DEBUG     (...ata/todaysmarket.cpp:150) : Added YieldCurve "Yield/MXN/MXN-IN-USD" to requiredYieldCurves map
+NOTICE    (...ata/todaysmarket.cpp:165) : Adding YieldCurve(MXN) with spec Yield/MXN/MXN-IN-USD to configuration default
+NOTICE    (...ata/todaysmarket.cpp:868) : Loading spec Yield/MXN/MXN-IN-USD done.
+NOTICE    (...ata/todaysmarket.cpp:131) : Loading spec FX/USD/MXN
+NOTICE    (...ata/todaysmarket.cpp:193) : Building FXSpot for asof April 17th, 2019
+NOTICE    (...ata/todaysmarket.cpp:202) : Adding FXSpot (USDMXN) with spec FX/USD/MXN to configuration default
+NOTICE    (...ata/todaysmarket.cpp:868) : Loading spec FX/USD/MXN done.
+NOTICE    (...ata/todaysmarket.cpp:875) : Loading 0 CurveSpecs done.
+DEBUG     (...tfolio/enginedata.cpp:51) : EngineData product=Swap model=DiscountedCashflows
+DEBUG     (...tfolio/enginedata.cpp:65) : EngineData product=Swap engine=DiscountingSwapEngine
+DEBUG     (...tfolio/enginedata.cpp:51) : EngineData product=CrossCurrencySwap model=DiscountedCashflows
+DEBUG     (...tfolio/enginedata.cpp:65) : EngineData product=CrossCurrencySwap engine=DiscountingCrossCurrencySwapEngine
+NOTICE    (...lio/enginefactory.cpp:81) : Building EngineFactory
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:DiscountedCashflows and engine:DiscountingSwapEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:DiscountedCashflows and engine:DiscountingSwapEngineOptimised
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:DiscountedCashflows and engine:DiscountingCrossCurrencySwapEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:BlackBachelier and engine:BlackBachelierSwaptionEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:LGM and engine:Grid
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:DiscountedCashflows and engine:DiscountingFxForwardEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:GarmanKohlhagen and engine:AnalyticEuropeanEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:IborCapModel and engine:IborCapEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:BlackOrBachelier and engine:BlackIborCouponPricer
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:CapFlooredYYModel and engine:CapFlooredYYCouponPricer
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:BrigoMercurio and engine:Analytic
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:YYCapModel and engine:YYCapEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:DiscountedCashflows and engine:DiscountingEquityForwardEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:BlackScholesMerton and engine:AnalyticEuropeanEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:DiscountedCashflows and engine:DiscountingRiskyBondEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:Hagan and engine:Analytic
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:Hagan and engine:Numerical
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:LinearTSR and engine:LinearTSRPricer
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:DiscountedCashflows and engine:MidPointCdsEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:DiscountedCashflows and engine:DiscountingCommodityForwardEngine
+NOTICE    (...lio/enginefactory.cpp:90) : EngineFactory registering builder for model:BlackScholes and engine:AnalyticEuropeanEngine
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type Fixed
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type ZeroCouponFixed
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type Floating
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type Cashflow
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type CPI
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type YY
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type CMS
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type CMSSpread
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type DigitalCMSSpread
+NOTICE    (...io/enginefactory.cpp:120) : EngineFactory registering builder for leg type Equity
+NOTICE    (...rtfolio/portfolio.cpp:45) : Parsing XML ./input/mxnircurves/mxn_usd_xccy_swap.xml
+NOTICE    (...rtfolio/portfolio.cpp:47) : Loaded XML file
+DEBUG     (...rtfolio/portfolio.cpp:70) : Parsing trade id:mxn_usd_xccy_swap
+DEBUG     (...rtfolio/portfolio.cpp:81) : Added Trade mxn_usd_xccy_swap (mxn_usd_xccy_swap) type:Swap
+NOTICE    (...rtfolio/portfolio.cpp:89) : Finished Parsing XML doc
+NOTICE    (...tfolio/portfolio.cpp:126) : Building Portfolio of size 1
+DEBUG     (...ed/portfolio/swap.cpp:44) : Swap::build() called for trade mxn_usd_xccy_swap
+DEBUG     (...d/portfolio/swap.cpp:163) : Swap::build(): currency[0] = USD
+DEBUG     (...d/portfolio/swap.cpp:163) : Swap::build(): currency[1] = MXN
+DEBUG     (...d/portfolio/swap.cpp:237) : Notional is 100000000.000000 USD
+DEBUG     (...d/portfolio/swap.cpp:257) : Set instrument wrapper
+NOTICE    (...tfolio/portfolio.cpp:137) : Built Portfolio. Size now 1

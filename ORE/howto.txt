@@ -1,0 +1,16 @@
+Building with the Debug configuration can produce some exceptions (To be fixed)
+
+Run:
+    cd Example/Example_3
+    ../../build/App/ore Input/ore.xml
+
+
+Changes: 
+    After the changes already made by Matlogica so ORE and QuantLib use AADC, the following changes were made as part of this project
+
+    OREAnalytics/orea/app/oreapp.cpp -> only commented unnecessary code (eg. code after our test)
+    OREAnalytics/orea/app/reporwriter.cpp -> all code contained in #if AADC_QL_RUN (lines 70 to 285)
+    OREData/ored/marketdata/market.hpp -> added AADC data related functions (lines 229 to 236)
+    OREData/ored/marketdata/marketimpl.hpp -> added AADC data related functions implementations (lines 198 to 280)
+    QuantLib/ql/termstructures/yield/discountcurve.hpp -> some commented variations in markVecAs**** functions 
+

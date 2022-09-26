@@ -1,0 +1,15 @@
+*.o
+
+*.lib
+*.dll
+*.exp
+
+net_debug.*
+
+build_deb/*
+build/*
+
+docker/*
+
+visualstudio/*
+
