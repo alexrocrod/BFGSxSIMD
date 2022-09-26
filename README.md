@@ -1,8 +1,6 @@
 # BFGSxSIMD
 Improvements and SIMD implementation for the LBFGS++ library
 
-#### The full changes are not yet avaiable here.
-
 We used AADC by Matlogica (matlogica.com).
 
 Changes to LBFGS++ -> see Final/3rdparty/LBFGS.h and  Final/3rdparty/LBFGSpp/*
