@@ -141,9 +141,6 @@ public:
                 return fmin;
             }
         }
-
-        if (dg_count < 2)           // not using finite differences
-            getGrad(x, grad);
         
         for (int64_t i = 0; i < x.size(); i++)
             x[i] = aadc::toDblPtr(xs[i])[minElIndex];
@@ -153,10 +150,13 @@ public:
         return fx;
     }
     /// function that calculates the 1D-derivative 
-    double getDg(const VectorXd &drt, const VectorXd &x, const double &fx0, const VectorXd &grad)   
+    double getDg(const VectorXd &drt, const VectorXd &x, const double &fx0, VectorXd &grad)   
     {
         if (dg_count < 2 )
+        {
+            getGrad(x, grad);
             return grad.dot(drt);
+        }
                 
         aadc::mmVector<mmType> xs(x.size());  // vector of x mmtypes
 

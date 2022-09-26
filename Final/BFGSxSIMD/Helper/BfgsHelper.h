@@ -124,10 +124,6 @@ public:
             }
         }  
 
-        // if (dg_count < 2)       // not using finite differences
-        //     getGrad(x, grad);
-        
-
         step = steps[minElIndex];           // updates the step with the used step
 
         for (int i = 0; i < n; i++)
@@ -298,16 +294,24 @@ public:
     {
         dg_count = min(ord,avx_count);
 
-        if (dg_count == 2)
-            coeffs = coeffs_2;
-        else if (dg_count == 4)
-            coeffs = coeffs_4;
-        else if (dg_count == 6)
-            coeffs = coeffs_6;
-        else if (dg_count == 8)
-            coeffs = coeffs_8;  
-        else // invalid dg_count -> disabling finite differences
-            dg_count = 0;
+        switch (dg_count)
+        {
+            case 2:
+                coeffs = coeffs_2;
+                break;
+            case 4:
+                coeffs = coeffs_4;
+                break;
+            case 6:
+                coeffs = coeffs_6;
+                break;
+            case 8:
+                coeffs = coeffs_8;
+                break;
+            default: // invalid dg_count -> disabling finite differences
+                dg_count = 0;
+                break;
+        }
     }
     const int getDgOrder()
     {
